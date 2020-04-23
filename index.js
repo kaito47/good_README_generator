@@ -55,6 +55,13 @@ const questions = [
         message: "What does the user need to know about using the repo?",
 
     },
+
+    {
+        type: "input",
+        name: "badge",
+        message: "Please provide the URL to your badge.",
+    },
+
     {
         type: "input",
         name: "contributions",
@@ -70,28 +77,50 @@ inquirer.prompt(questions).then(answers => {
     console.log(JSON.stringify(answers, null, '  '));
 });
 
-// function promptUser() {
-//     return inquirer.prompt(questions);
 
+function writeToFile(fileName, data) {
+    `# ${answers.projectName}
+    
+    ## Description
+        ${answers.projectDescription}.
+    
+    ## Installation 
 
-// };
+    In order to install dependencies, use: ${answers.installDependecies}.
+    
+    ## Usage
 
-// promptUser();
-// console.log(answers);
-// inquirer.prompt(questions);
-    // .then(function (answers) {
-    //     console.log(answers);
-    // });
-    // .catch(function(err) {
-    //     console.log(err);
-    // });
+    In order to use the repo, ${answers.use}.
 
+    ## License
 
-// function writeToFile(fileName, data) {
-//         }
+    The license for this repo is: ${answers.license}.
 
-// function init() {
+    ## Badges
 
-//         }
+    ![badge](${answers.badge})
 
-// init();
+    ## Contributing
+
+    In order to contribute to this application, you should: ${answers.contributions}.
+
+    ## Tests
+
+    In order to run tests for this application, use the command: ${answers.runTests}.
+
+    ## Link
+
+    ${answers.projectURL}
+
+    ----
+    To leave comments or questions about this application, email me at: ${answers.email}.
+
+    © 2020 ${answers.username}
+        `
+}
+
+function init() {
+
+}
+
+init();
