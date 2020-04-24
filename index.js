@@ -4,8 +4,7 @@ const fs = require("fs").promises;
 console.log('Welcome to the good README generator!');
 
 const questions = [
-    // function promptUser() {
-    //     return inquirer.prompt([
+
     {
         type: "input",
         name: "username",
@@ -75,18 +74,20 @@ const questions = [
 inquirer.prompt(questions).then(answers => {
     console.log('\nREADME Answers:');
     console.log(JSON.stringify(answers, null, '  '));
+    writeToFile("README.md", answers)
 });
 
 
-function writeToFile(fileName, data) {
-    `# ${answers.projectName}
+function writeToFile(fileName, answers) {
+    var documentBody = `
+    # ${answers.projectName}
     
     ## Description
         ${answers.projectDescription}.
     
     ## Installation 
 
-    In order to install dependencies, use: ${answers.installDependecies}.
+    In order to install dependencies, use: ${answers.installDependencies}.
     
     ## Usage
 
@@ -117,10 +118,29 @@ function writeToFile(fileName, data) {
 
     © 2020 ${answers.username}
         `
-}
+    fs.writeFile(fileName, documentBody, function (err) {
 
-function init() {
+        if (err) {
+            return console.log(err);
+        }
 
-}
 
-init();
+    })
+};
+
+// async function init() {
+//     console.log('Writing to README.md')
+//     try {
+
+//         const answers = await inquirer.prompt();
+
+//         await writeToFile('README.md', answers);
+
+//         console.log('Successfully wrote to README.md');
+//     } catch (err) {
+//         console.log(err);
+//     }
+
+// }
+
+// init();
