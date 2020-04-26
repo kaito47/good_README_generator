@@ -26,7 +26,7 @@ This product is licensed under none.
 
 ## Badges
 
-![badge](https://img.shield.io/badge/dependencies-inquirer-brightgreen)
+![badge](https://img.shields.io/badge/dependencies-inquirer-yellowgreen)
 
 ## Contributing
 
@@ -38,7 +38,7 @@ In order to run tests for this application, use the command run test.
 
 ## Link
 
-![link](github.com/kaito47/good_README_generator)
+https://github.com/kaito47/good_README_generator
 
 ----
 To leave comments or questions about this application, email me at: oshaughnessykm@gmail.com.
