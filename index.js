@@ -29,7 +29,7 @@ const questions = [
     {
         type: "input",
         name: "projectDescription",
-        message: "Please write a short description of your project:",
+        message: "Please write a description of your project, including what it is, why you created it, any challenges faced and how you overcame them, and future developments:",
     },
     {
         type: "list",
@@ -128,19 +128,3 @@ function writeToFile(fileName, answers) {
     })
 };
 
-// async function init() {
-//     console.log('Writing to README.md')
-//     try {
-
-//         const answers = await inquirer.prompt();
-
-//         await writeToFile('README.md', answers);
-
-//         console.log('Successfully wrote to README.md');
-//     } catch (err) {
-//         console.log(err);
-//     }
-
-// }
-
-// init();
