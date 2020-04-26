@@ -102,11 +102,11 @@ In order to install dependencies, use ${answers.installDependencies}.
     
 ## Usage
 
-In order to use the repo, ${answers.use}.
+In order to use the repo: ${answers.use}.
 
 ## License
 
-This product is licensed under ${answers.license}.
+This product is licensed under: ${answers.license}.
 
 ## Badges
 

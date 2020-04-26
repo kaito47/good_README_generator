@@ -20,11 +20,11 @@ In order to install dependencies, use npm install.
     
 ## Usage
 
-In order to use the repo, nothing.
+In order to use the repo use node.js.
 
 ## License
 
-This product is licensed under none.
+This product is licensed under: none.
 
 ## Badges
 
@@ -32,7 +32,7 @@ This product is licensed under none.
 
 ## Contributing
 
-In order to contribute to this application: nothing.
+In order to contribute to this application: nothing in particular.
 
 ## Tests
 
