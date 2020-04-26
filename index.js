@@ -35,7 +35,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What kind of license should your project have?",
-        choices: ['MIT', 'Creative Commons', 'GNU/GPL'],
+        choices: ['MIT', 'Creative Commons', 'GNU/GPL', 'none'],
     },
 
     {
@@ -87,7 +87,7 @@ function writeToFile(fileName, answers) {
     
     ## Installation 
 
-    In order to install dependencies, use: ${answers.installDependencies}.
+    In order to install dependencies, use ${answers.installDependencies}.
     
     ## Usage
 
@@ -95,7 +95,7 @@ function writeToFile(fileName, answers) {
 
     ## License
 
-    The license for this repo is: ${answers.license}.
+    This product is licensed under ${answers.license}.
 
     ## Badges
 
@@ -103,11 +103,11 @@ function writeToFile(fileName, answers) {
 
     ## Contributing
 
-    In order to contribute to this application, you should: ${answers.contributions}.
+    In order to contribute to this application: ${answers.contributions}.
 
     ## Tests
 
-    In order to run tests for this application, use the command: ${answers.runTests}.
+    In order to run tests for this application, use the command ${answers.runTests}.
 
     ## Link
 
