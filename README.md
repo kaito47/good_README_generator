@@ -1,7 +1,9 @@
 
 # good_README_generator
     
-## Description This application generated a README file with all of the important components. Users can input the various fields using node.js..
+## Description 
+
+This application generates a README.md file based on user inputs into given fields. Topics covered in this README are: description, usage, license, badges, contributing, tests, questions, and a link to the github repo. 
 
 ## Table of Contents
 * [Installation](#installation)
@@ -41,6 +43,7 @@ In order to run tests for this application, use the command run test.
 https://github.com/kaito47/good_README_generator
 
 ----
+## Email
 To leave comments or questions about this application, email me at: oshaughnessykm@gmail.com.
 
 © 2020 kaito47
