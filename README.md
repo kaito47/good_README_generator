@@ -38,7 +38,7 @@ In order to run tests for this application, use the command run test.
 
 ## Link
 
-github.com/kaito47/good_README_generator
+![link](github.com/kaito47/good_README_generator)
 
 ----
 To leave comments or questions about this application, email me at: oshaughnessykm@gmail.com.
