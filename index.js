@@ -42,11 +42,13 @@ const questions = [
         type: "input",
         name: "installDependencies",
         message: "What command should be use to install dependencies?",
+        default: "npm install",
     },
     {
         type: "input",
         name: "runTests",
         message: "What command should be used to run tests?",
+        default: "npm run test",
     },
     {
         type: "input",
@@ -68,7 +70,6 @@ const questions = [
     }
 
 
-
 ];
 
 inquirer.prompt(questions).then(answers => {
@@ -80,44 +81,52 @@ inquirer.prompt(questions).then(answers => {
 
 function writeToFile(fileName, answers) {
     var documentBody = `
-    # ${answers.projectName}
+# ${answers.projectName}
     
-    ## Description
-        ${answers.projectDescription}.
+## Description ${answers.projectDescription}.
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#email)
+* [Link](#link)
+
+## Installation 
+
+In order to install dependencies, use ${answers.installDependencies}.
     
-    ## Installation 
+## Usage
 
-    In order to install dependencies, use ${answers.installDependencies}.
-    
-    ## Usage
+In order to use the repo, ${answers.use}.
 
-    In order to use the repo, ${answers.use}.
+## License
 
-    ## License
+This product is licensed under ${answers.license}.
 
-    This product is licensed under ${answers.license}.
+## Badges
 
-    ## Badges
+![badge](${answers.badge})
 
-    ![badge](${answers.badge})
+## Contributing
 
-    ## Contributing
+In order to contribute to this application: ${answers.contributions}.
 
-    In order to contribute to this application: ${answers.contributions}.
+## Tests
 
-    ## Tests
+In order to run tests for this application, use the command ${answers.runTests}.
 
-    In order to run tests for this application, use the command ${answers.runTests}.
+## Link
 
-    ## Link
+${answers.projectURL}
 
-    ${answers.projectURL}
+----
+To leave comments or questions about this application, email me at: ${answers.email}.
 
-    ----
-    To leave comments or questions about this application, email me at: ${answers.email}.
+© 2020 ${answers.username}`
 
-    © 2020 ${answers.username}
-        `
     fs.writeFile(fileName, documentBody, function (err) {
 
         if (err) {
