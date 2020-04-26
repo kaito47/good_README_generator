@@ -3,7 +3,7 @@
     
 ## Description 
 
-This application generates a README.md file based on user inputs into given fields. Topics covered in this README are: description, usage, license, badges, contributing, tests, questions, and a link to the github repo. 
+This application generates a README.md file based on user inputs into given fields. Topics covered in this README are: description, usage, license, badges, contributing, tests, questions, and a link to the github repo.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -36,14 +36,13 @@ In order to contribute to this application: nothing.
 
 ## Tests
 
-In order to run tests for this application, use the command run test.
+In order to run tests for this application, use the command npm run test.
 
 ## Link
 
-https://github.com/kaito47/good_README_generator
+https://github.kaito47/good_readme_generator
 
 ----
-## Email
 To leave comments or questions about this application, email me at: oshaughnessykm@gmail.com.
 
 © 2020 kaito47

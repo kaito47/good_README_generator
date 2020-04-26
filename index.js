@@ -83,7 +83,9 @@ function writeToFile(fileName, answers) {
     var documentBody = `
 # ${answers.projectName}
     
-## Description ${answers.projectDescription}.
+## Description 
+
+${answers.projectDescription}.
 
 ## Table of Contents
 * [Installation](#installation)
