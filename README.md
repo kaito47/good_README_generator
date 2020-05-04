@@ -1,9 +1,9 @@
 
-# good_README_generator
+# team-summary-generator
     
 ## Description 
 
-This application generates a README.md file based on user inputs into given fields. Topics covered in this README are: description, usage, license, badges, contributing, tests, questions, and a link to the github repo.
+This application creates a web development team roster using a node CLI to generate an HTML page. Users are able to input information about the team manager, engineer(s), and intern(s) in the command line, and a stylized html page is created displaying the roles and important contact information relative to each team member..
 
 ## Table of Contents
 * [Installation](#installation)
@@ -20,7 +20,7 @@ In order to install dependencies, use npm install.
     
 ## Usage
 
-In order to use the repo use node.js.
+In order to use the repo: To use this repo, make sure that the dependencies have been installed prior to use. Users can then input the relevant information into the command line as prompted. Once all fields are complete, an html page will be automatically generated..
 
 ## License
 
@@ -28,11 +28,11 @@ This product is licensed under: none.
 
 ## Badges
 
-![badge](https://img.shields.io/badge/dependencies-inquirer-yellowgreen)
+![badge](N/A)
 
 ## Contributing
 
-In order to contribute to this application: nothing in particular.
+In order to contribute to this application: Nothing.
 
 ## Tests
 
@@ -40,7 +40,7 @@ In order to run tests for this application, use the command npm run test.
 
 ## Link
 
-https://github.kaito47/good_readme_generator
+N/A
 
 ----
 To leave comments or questions about this application, email me at: oshaughnessykm@gmail.com.
