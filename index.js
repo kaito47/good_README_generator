@@ -35,7 +35,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What kind of license should your project have?",
-        choices: ['MIT', 'Creative Commons', 'GNU/GPL', 'none'],
+        choices: ['Apache License 2.0', 'BSD-3', 'Mozilla Public License 2.0', 'MIT', 'Creative Commons', 'GNU/GPL', 'none'],
     },
 
     {
@@ -57,11 +57,11 @@ const questions = [
 
     },
 
-    {
-        type: "input",
-        name: "badge",
-        message: "Please provide the URL to your badge.",
-    },
+    // {
+    //     type: "input",
+    //     name: "badge",
+    //     message: "Please provide the URL to your badge.",
+    // },
 
     {
         type: "input",
@@ -76,11 +76,17 @@ inquirer.prompt(questions).then(answers => {
     console.log('\nREADME Answers:');
     console.log(JSON.stringify(answers, null, '  '));
     writeToFile("README.md", answers)
+}).catch(error => {
+    console.error(error)
 });
 
-
+function writeLicense(license) {
+    const licenseName = license.split(' ').join('%20');
+    return licenseName;
+}
 function writeToFile(fileName, answers) {
-    var documentBody = `
+    let licenseBadge = writeLicense(answers.license);
+    const documentBody = `
 # ${answers.projectName}
     
 ## Description 
@@ -106,11 +112,7 @@ In order to use the repo: ${answers.use}.
 
 ## License
 
-This product is licensed under: ${answers.license}.
-
-## Badges
-
-![badge](${answers.badge})
+This product is licensed under: ![licenseBadge](https://img.shields.io/badge/badge-${licenseBadge}-brightgreen)
 
 ## Contributing
 

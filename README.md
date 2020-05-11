@@ -1,9 +1,9 @@
 
-# team-summary-generator
+# sldkfj
     
 ## Description 
 
-This application creates a web development team roster using a node CLI to generate an HTML page. Users are able to input information about the team manager, engineer(s), and intern(s) in the command line, and a stylized html page is created displaying the roles and important contact information relative to each team member..
+dkdf.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -16,23 +16,19 @@ This application creates a web development team roster using a node CLI to gener
 
 ## Installation 
 
-In order to install dependencies, use npm install.
+In order to install dependencies, use l.
     
 ## Usage
 
-In order to use the repo: To use this repo, make sure that the dependencies have been installed prior to use. Users can then input the relevant information into the command line as prompted. Once all fields are complete, an html page will be automatically generated..
+In order to use the repo: .
 
 ## License
 
-This product is licensed under: none.
-
-## Badges
-
-![badge](N/A)
+This product is licensed under: ![licenseBadge](https://img.shields.io/badge/badge-Apache%20License%202.0-brightgreen)
 
 ## Contributing
 
-In order to contribute to this application: Nothing.
+In order to contribute to this application: .
 
 ## Tests
 
@@ -40,9 +36,9 @@ In order to run tests for this application, use the command npm run test.
 
 ## Link
 
-N/A
+sdkjf
 
 ----
-To leave comments or questions about this application, email me at: oshaughnessykm@gmail.com.
+To leave comments or questions about this application, email me at: oshaughnessykm@gmail.com	.
 
-© 2020 kaito47
+© 2020 kaito
